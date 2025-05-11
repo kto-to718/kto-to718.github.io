@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Обучение</title>
+</head>
+<body>
+    <!-- Тут вёрстка для навигации -->
+    <nav>
+        <h1>🌎LINGVO</h1>
+        <div class="nav_button">
+            <a href="index.html">Главная</a>
+            <a href="learn.html">Обучение</a>
+            <a href="theory.html">Теория</a>
+        </div>
+    </nav>
+
+    <!-- Тут вёрстка для основной части страницы -->
+    <main class="learn-container">
+        <div class="language-toggle">
+            <span>Русский</span>
+            <label class="switch">
+                <input type="checkbox" id="languageToggle">
+                <span class="slider round"></span>
+            </label>
+            <span>Английский</span>
+        </div>
+
+        <br>
+
+        <div id="countLearnWords">Количество изученных слов: 0</div>
+
+        <br>
+
+        <div class="word-card" id="wordCard">
+            <div class="word-display" id="wordDisplay"></div>
+            <div class="translation-display" id="translationDisplay"></div>
+        </div>
+
+        <br>
+
+        <button class="refresh-button" id="refreshButton">Новое слово</button>
+    </main>
+
+    <!-- Тут вёрстка для подвала страницы -->
+     <footer>
+        <h1>Учитесь в любое время и в любом месте</h1>
+        <div class="footer_icons">
+            <img src="../src/playmarket.png">
+            <img src="../src/apple.png">
+        </div>
+     </footer>
+
+     <script src="../js/script.js"></script>
+</body>
+</html>
